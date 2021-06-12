@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hote_galleries",
+  "info": {
+    "name": "hoteGallery"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "caption": {
+      "type": "text",
+      "required": true
+    },
+    "hotel": {
+      "model": "hotels",
+      "via": "hote_galleries"
+    }
+  }
+}

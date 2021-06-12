@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hotels",
+  "info": {
+    "name": "hotels"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hotelName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "hotelStars": {
+      "type": "integer",
+      "max": 8,
+      "required": true
+    },
+    "minimumPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "discountPercent": {
+      "type": "decimal",
+      "required": true
+    },
+    "descriptions": {
+      "type": "richtext",
+      "required": true
+    },
+    "imageProfile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "hote_galleries": {
+      "via": "hotel",
+      "collection": "hote-gallery"
+    },
+    "hotel_services": {
+      "via": "hotel",
+      "collection": "hotel-services"
+    }
+  }
+}

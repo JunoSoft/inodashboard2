@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hote-galleries",
+      "handler": "hote-gallery.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hote-galleries/count",
+      "handler": "hote-gallery.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hote-galleries/:id",
+      "handler": "hote-gallery.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hote-galleries",
+      "handler": "hote-gallery.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hote-galleries/:id",
+      "handler": "hote-gallery.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hote-galleries/:id",
+      "handler": "hote-gallery.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

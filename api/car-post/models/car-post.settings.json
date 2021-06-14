@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hotels",
+  "collectionName": "car_posts",
   "info": {
-    "name": "hotels",
+    "name": "carPost",
     "description": ""
   },
   "options": {
@@ -12,55 +12,36 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "hotelName": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "location": {
+    "carName": {
       "type": "string",
       "required": true
     },
-    "phone": {
-      "type": "string"
-    },
-    "hotelStars": {
-      "type": "integer",
-      "max": 8,
+    "carType": {
+      "type": "string",
       "required": true
     },
-    "minimumPrice": {
-      "type": "decimal",
+    "engine": {
+      "type": "string",
       "required": true
     },
-    "discountPercent": {
-      "type": "decimal",
+    "gas": {
+      "type": "string",
       "required": true
     },
-    "descriptions": {
-      "type": "richtext",
+    "interialColor": {
+      "type": "string",
       "required": true
     },
-    "imageProfile": {
+    "exterialColor": {
+      "type": "string",
+      "required": true
+    },
+    "milesAge": {
+      "type": "string",
+      "required": true
+    },
+    "postProfile": {
       "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "hotelEmail": {
-      "type": "email",
-      "required": true
-    },
-    "website": {
-      "type": "string",
-      "required": false
-    },
-    "hotelGalleryImages": {
-      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
@@ -69,8 +50,21 @@
       "required": false,
       "pluginOptions": {}
     },
-    "x_services": {
-      "collection": "x-services"
+    "description": {
+      "type": "richtext"
+    },
+    "car_owner": {
+      "model": "car-owners"
+    },
+    "garellyImages": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "x_services",
+  "info": {
+    "name": "xServices"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "addServiceName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hotel_services",
+  "collectionName": "apartments_owners",
   "info": {
-    "name": "hotelServices",
-    "description": ""
+    "name": "apartmentsOwner"
   },
   "options": {
     "increments": true,
@@ -12,26 +11,39 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "serviceName": {
+    "CompanyName": {
       "type": "string",
       "required": true
     },
-    "serviceCost": {
+    "phone": {
       "type": "string",
       "required": true
     },
-    "Image": {
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "website": {
+      "type": "string",
+      "required": true
+    },
+    "profileImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
-    "hotel": {
-      "model": "hotels"
+    "description": {
+      "type": "richtext",
+      "required": true
     }
   }
 }

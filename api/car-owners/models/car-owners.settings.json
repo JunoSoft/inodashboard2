@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hotel_services",
+  "collectionName": "car_owners",
   "info": {
-    "name": "hotelServices",
-    "description": ""
+    "name": "carOwners"
   },
   "options": {
     "increments": true,
@@ -12,15 +11,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "serviceName": {
+    "companyName": {
       "type": "string",
       "required": true
     },
-    "serviceCost": {
+    "location": {
       "type": "string",
       "required": true
     },
-    "Image": {
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "profileImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -29,9 +36,6 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
-    },
-    "hotel": {
-      "model": "hotels"
     }
   }
 }

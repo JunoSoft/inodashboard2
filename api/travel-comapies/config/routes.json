@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/hote-galleries",
-      "handler": "hote-gallery.find",
+      "path": "/travel-comapies",
+      "handler": "travel-comapies.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/hote-galleries/count",
-      "handler": "hote-gallery.count",
+      "path": "/travel-comapies/count",
+      "handler": "travel-comapies.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/hote-galleries/:id",
-      "handler": "hote-gallery.findOne",
+      "path": "/travel-comapies/:id",
+      "handler": "travel-comapies.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/hote-galleries",
-      "handler": "hote-gallery.create",
+      "path": "/travel-comapies",
+      "handler": "travel-comapies.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/hote-galleries/:id",
-      "handler": "hote-gallery.update",
+      "path": "/travel-comapies/:id",
+      "handler": "travel-comapies.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/hote-galleries/:id",
-      "handler": "hote-gallery.delete",
+      "path": "/travel-comapies/:id",
+      "handler": "travel-comapies.delete",
       "config": {
         "policies": []
       }

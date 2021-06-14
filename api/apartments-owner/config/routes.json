@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/apartments-owners",
+      "handler": "apartments-owner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apartments-owners/count",
+      "handler": "apartments-owner.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apartments-owners/:id",
+      "handler": "apartments-owner.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/apartments-owners",
+      "handler": "apartments-owner.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/apartments-owners/:id",
+      "handler": "apartments-owner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/apartments-owners/:id",
+      "handler": "apartments-owner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

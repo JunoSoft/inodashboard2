@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hote_galleries",
+  "collectionName": "create_home_sliders",
   "info": {
-    "name": "hoteGallery"
+    "name": "createHomeSlider"
   },
   "options": {
     "increments": true,
@@ -11,7 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Image": {
+    "buttonName": {
+      "type": "string",
+      "default": "advertisement",
+      "required": true
+    },
+    "sliderImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -21,13 +26,8 @@
       "required": true,
       "pluginOptions": {}
     },
-    "caption": {
-      "type": "text",
-      "required": true
-    },
-    "hotel": {
-      "model": "hotels",
-      "via": "hote_galleries"
+    "descriptionInfo": {
+      "type": "richtext"
     }
   }
 }

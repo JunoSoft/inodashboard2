@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hotel_services",
+  "collectionName": "travel_comapies",
   "info": {
-    "name": "hotelServices",
-    "description": ""
+    "name": "travelComapies"
   },
   "options": {
     "increments": true,
@@ -12,26 +11,34 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "serviceName": {
+    "companyName": {
       "type": "string",
       "required": true
     },
-    "serviceCost": {
+    "companyPhone": {
       "type": "string",
       "required": true
     },
-    "Image": {
+    "LocationAddress": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "imageProfile": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
-    "hotel": {
-      "model": "hotels"
+    "companyDescription": {
+      "type": "richtext"
     }
   }
 }

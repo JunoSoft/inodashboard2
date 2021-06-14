@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hotel_services",
+  "collectionName": "event_posts",
   "info": {
-    "name": "hotelServices",
-    "description": ""
+    "name": "eventPost"
   },
   "options": {
     "increments": true,
@@ -12,15 +11,26 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "serviceName": {
+    "eventName": {
       "type": "string",
       "required": true
     },
-    "serviceCost": {
+    "location": {
       "type": "string",
       "required": true
     },
-    "Image": {
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "eventPoster": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -30,8 +40,8 @@
       "required": true,
       "pluginOptions": {}
     },
-    "hotel": {
-      "model": "hotels"
+    "event_owner": {
+      "model": "event-owners"
     }
   }
 }

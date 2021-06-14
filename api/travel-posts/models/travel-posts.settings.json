@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hotel_services",
+  "collectionName": "travel_posts",
   "info": {
-    "name": "hotelServices",
-    "description": ""
+    "name": "travelPosts"
   },
   "options": {
     "increments": true,
@@ -12,26 +11,34 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "serviceName": {
+    "tripName": {
       "type": "string",
       "required": true
     },
-    "serviceCost": {
+    "tripLocation": {
       "type": "string",
       "required": true
     },
-    "Image": {
+    "tripCost": {
+      "type": "string",
+      "required": true
+    },
+    "tripPoster": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
-    "hotel": {
-      "model": "hotels"
+    "tripDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "travel_comapy": {
+      "model": "travel-comapies"
     }
   }
 }

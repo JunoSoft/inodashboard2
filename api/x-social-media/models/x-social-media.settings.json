@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "x_social_medias",
+  "info": {
+    "name": "xSocialMedia"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mediaName": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

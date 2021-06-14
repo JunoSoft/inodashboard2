@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apartment_facilities",
+  "info": {
+    "name": "apartmentFacilities"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bedroomNumber": {
+      "type": "integer",
+      "max": 15,
+      "required": true
+    },
+    "toilets": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "default": 1
+    },
+    "other": {
+      "type": "text",
+      "required": true
+    },
+    "kitchens": {
+      "type": "integer",
+      "default": 1,
+      "max": 5,
+      "required": true
+    },
+    "livingroomNumber": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "max": 5
+    },
+    "apartments_owner": {
+      "model": "apartments-owner"
+    }
+  }
+}

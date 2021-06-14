@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hotel_services",
+  "collectionName": "apartment_posts",
   "info": {
-    "name": "hotelServices",
+    "name": "apartmentPost",
     "description": ""
   },
   "options": {
@@ -12,26 +12,32 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "serviceName": {
+    "house": {
       "type": "string",
       "required": true
     },
-    "serviceCost": {
+    "price": {
       "type": "string",
       "required": true
     },
-    "Image": {
-      "model": "file",
+    "descriptions": {
+      "type": "richtext"
+    },
+    "apartmentGallery": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
-    "hotel": {
-      "model": "hotels"
+    "apartments_owner": {
+      "model": "apartments-owner"
+    },
+    "x_services": {
+      "collection": "x-services"
     }
   }
 }

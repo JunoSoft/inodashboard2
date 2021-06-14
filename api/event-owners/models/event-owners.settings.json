@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hotel_services",
+  "collectionName": "event_owners",
   "info": {
-    "name": "hotelServices",
-    "description": ""
+    "name": "eventOwners"
   },
   "options": {
     "increments": true,
@@ -12,26 +11,31 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "serviceName": {
+    "companyName": {
       "type": "string",
       "required": true
     },
-    "serviceCost": {
+    "phone": {
       "type": "string",
       "required": true
     },
-    "Image": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "profileImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
-    },
-    "hotel": {
-      "model": "hotels"
     }
   }
 }

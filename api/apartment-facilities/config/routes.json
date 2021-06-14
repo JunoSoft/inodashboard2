@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/apartment-facilities",
+      "handler": "apartment-facilities.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apartment-facilities/count",
+      "handler": "apartment-facilities.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apartment-facilities/:id",
+      "handler": "apartment-facilities.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/apartment-facilities",
+      "handler": "apartment-facilities.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/apartment-facilities/:id",
+      "handler": "apartment-facilities.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/apartment-facilities/:id",
+      "handler": "apartment-facilities.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

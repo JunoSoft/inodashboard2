@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/apartment-posts",
+      "handler": "apartment-post.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apartment-posts/count",
+      "handler": "apartment-post.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apartment-posts/:id",
+      "handler": "apartment-post.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/apartment-posts",
+      "handler": "apartment-post.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/apartment-posts/:id",
+      "handler": "apartment-post.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/apartment-posts/:id",
+      "handler": "apartment-post.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

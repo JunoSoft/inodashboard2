@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hotel_services",
+  "collectionName": "trips_galleries",
   "info": {
-    "name": "hotelServices",
-    "description": ""
+    "name": "tripsGallery"
   },
   "options": {
     "increments": true,
@@ -12,16 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "serviceName": {
-      "type": "string",
-      "required": true
+    "generalCaption": {
+      "type": "text"
     },
-    "serviceCost": {
-      "type": "string",
-      "required": true
-    },
-    "Image": {
-      "model": "file",
+    "galleryImages": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
@@ -30,8 +24,8 @@
       "required": true,
       "pluginOptions": {}
     },
-    "hotel": {
-      "model": "hotels"
+    "travel_comapy": {
+      "model": "travel-comapies"
     }
   }
 }

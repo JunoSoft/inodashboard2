@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "travel_posts",
   "info": {
-    "name": "travelPosts"
+    "name": "travelPosts",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -39,6 +40,16 @@
     },
     "travel_comapy": {
       "model": "travel-comapies"
+    },
+    "tripGallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

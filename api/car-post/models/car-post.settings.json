@@ -65,6 +65,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "price": {
+      "type": "string",
+      "required": true
     }
   }
 }

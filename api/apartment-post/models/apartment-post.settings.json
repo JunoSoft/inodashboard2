@@ -38,6 +38,14 @@
     },
     "x_services": {
       "collection": "x-services"
+    },
+    "chooseAction": {
+      "type": "enumeration",
+      "enum": [
+        "Sell",
+        "Rent"
+      ],
+      "required": true
     }
   }
 }

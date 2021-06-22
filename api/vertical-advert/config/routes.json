@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vertical-adverts",
+      "handler": "vertical-advert.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vertical-adverts/count",
+      "handler": "vertical-advert.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vertical-adverts/:id",
+      "handler": "vertical-advert.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vertical-adverts",
+      "handler": "vertical-advert.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vertical-adverts/:id",
+      "handler": "vertical-advert.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vertical-adverts/:id",
+      "handler": "vertical-advert.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

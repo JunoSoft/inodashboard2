@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/horizontal-adverts",
+      "handler": "horizontal-advert.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/horizontal-adverts/count",
+      "handler": "horizontal-advert.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/horizontal-adverts/:id",
+      "handler": "horizontal-advert.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/horizontal-adverts",
+      "handler": "horizontal-advert.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/horizontal-adverts/:id",
+      "handler": "horizontal-advert.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/horizontal-adverts/:id",
+      "handler": "horizontal-advert.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

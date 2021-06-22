@@ -69,6 +69,14 @@
     "price": {
       "type": "string",
       "required": true
+    },
+    "chooseAction": {
+      "type": "enumeration",
+      "enum": [
+        "for_Sell",
+        "for_Rent"
+      ],
+      "required": false
     }
   }
 }

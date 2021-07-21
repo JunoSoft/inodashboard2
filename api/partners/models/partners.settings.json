@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "partners",
   "info": {
-    "name": "Partners"
+    "name": "Partners",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -22,6 +23,9 @@
       "pluginOptions": {}
     },
     "companyName": {
+      "type": "string"
+    },
+    "link": {
       "type": "string"
     }
   }
